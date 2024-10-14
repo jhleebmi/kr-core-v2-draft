@@ -1,0 +1,32 @@
+Instance: krcore-observation-laboratory-result-example-01
+InstanceOf: KRCore_Observation_LaboratoryResult
+Title: "krcore-observation-laboratory-result-example-01"
+Description: "CBC 검사 결과 정보 예제"
+Usage: #example
+* status = #final
+* category = $observation-category#laboratory "Laboratory"
+* code = HIRA_EDI_Procedures#D0301026 "결석-결석분석_화학적분석"
+* code.text = "일반혈액검사"
+* subject = Reference(krcore-patient-example-01)
+* effectiveDateTime = "2023-04-25"
+* issued = "2023-04-25T15:25:52+09:00"
+* component[0].code = HIRA_EDI_Procedures#D0002030 "일반혈액검사(CBC)-[혈구세포-장비측정]_적혈구수"
+* component[=].valueQuantity = 4.23 '10*6/uL' "10⁶/uL"
+* component[=].referenceRange.low = 4.1 '10*6/uL' "10⁶/uL"
+* component[=].referenceRange.high = 5.6 '10*6/uL' "10⁶/uL"
+* component[+].code = HIRA_EDI_Procedures#D0002010 "일반혈액검사(CBC)-[혈구세포-장비측정]_백혈구수"
+* component[=].valueQuantity = 8.2 '10*3/uL' "10³/uL"
+* component[=].referenceRange.low = 4 '10*3/uL' "10³/uL"
+* component[=].referenceRange.high = 10 '10*3/uL' "10³/uL"
+* component[+].code = HIRA_EDI_Procedures#D0002050 "일반혈액검사(CBC)-[혈구세포-장비측정]_혈색소[광전비색법]"
+* component[=].valueQuantity = 14.78 'g/dL' "g/dL"
+* component[=].referenceRange.low = 13 'g/dL' "g/dL"
+* component[=].referenceRange.high = 16.5 'g/dL' "g/dL"
+* component[+].code = HIRA_EDI_Procedures#D0002040 "일반혈액검사(CBC)-[혈구세포-장비측정]_헤마토크리트"
+* component[=].valueQuantity = 42.2 '%' "%"
+* component[=].referenceRange.low = 39 '%' "%"
+* component[=].referenceRange.high = 51 '%' "%"
+* component[+].code = HIRA_EDI_Procedures#D0002070 "일반혈액검사(CBC)-[혈구세포-장비측정]_혈소판수"
+* component[=].valueQuantity = 296 '10*3/uL' "10³/uL"
+* component[=].referenceRange.low = 150 '10*3/uL' "10³/uL"
+* component[=].referenceRange.high = 370 '10*3/uL' "10³/uL"
