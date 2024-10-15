@@ -45,13 +45,13 @@ Description: "KR Core의 진단검사 정보에 적용되는 DiagnosticReport �
 * code.coding[EDI].system ^short = "건강보험심사평가원 건강보험요양급여비용 코드체계"
 * code.coding[EDI].code 1.. MS
 * code.coding[EDI].code ^short = "건강보험심사평가원 건강보험요양급여비용 코드"
-* code.coding contains loinc 0..* MS
-* code.coding[loinc] ^short = "LOINC 코드 정보"
-* code.coding[loinc] from $loinc (required)
-* code.coding[loinc].system 1.. MS
-* code.coding[loinc].system = "http://loinc.org" (exactly)
-* code.coding[loinc].code 1.. MS
-* code.coding[loinc].code ^short = "LOINC 코드"
+* code.coding contains LOINC 0..* MS
+* code.coding[LOINC] ^short = "LOINC 코드 정보"
+* code.coding[LOINC] from KR_Core_LOINC_Codes (required)
+* code.coding[LOINC].system 1.. MS
+* code.coding[LOINC].system = "http://loinc.org" (exactly)
+* code.coding[LOINC].code 1.. MS
+* code.coding[LOINC].code ^short = "LOINC 코드"
 * subject only Reference(KRCore_Patient)
 * subject ^short = "진단검사 대상"
 * issued MS

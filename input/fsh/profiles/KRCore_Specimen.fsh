@@ -15,6 +15,7 @@ Description: "KR Core의 검체종류."
 * type.coding ^slicing.rules = #open
 * type.coding contains SNOMED 1..* MS
 * type.coding[SNOMED] ^short = "SNOMEDCT 검체종류 코드 정보"
+* type.coding[SNOMED] from KR_Core_SNOMED_Codes
 * type.coding[SNOMED].system 1.. MS
 * type.coding[SNOMED].system = "http://snomed.info/sct" (exactly)
 * type.coding[SNOMED].system ^short = "SNOMED-CT"

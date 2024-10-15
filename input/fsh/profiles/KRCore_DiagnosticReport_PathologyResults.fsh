@@ -48,7 +48,7 @@ Description: "KR Core의 병리검사 정보에 적용되는 DiagnosticReport �
 * code.coding[EDI].code ^short = "건강보험심사평가원 건강보험요양급여비용 코드"
 * code.coding contains SNOMEDCT 0..* MS
 * code.coding[SNOMEDCT] ^short = "SNOMEDCT 코드 정보"
-* code.coding[SNOMEDCT] from $snomed (required)
+* code.coding[SNOMEDCT] from KR_Core_SNOMED_Codes (required)
 * code.coding[SNOMEDCT].system 1.. MS
 * code.coding[SNOMEDCT].system = "http://snomed.org" (exactly)
 * code.coding[SNOMEDCT].code 1.. MS

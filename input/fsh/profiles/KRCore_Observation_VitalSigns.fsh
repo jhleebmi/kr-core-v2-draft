@@ -34,7 +34,7 @@ Description: "KR Core의 활력징후 및 신체 계측 정보에 적용되는 O
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains Loinc 0..* MS
-* code.coding[Loinc] from LOINCCodes (required)
+* code.coding[Loinc] from KR_Core_LOINC_Codes (required)
 * code.coding[Loinc] ^short = "Loinc 코드 정보"
 * code.coding[Loinc] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet"
 * code.coding[Loinc] ^binding.extension.valueCanonical = "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-vital-signs-codes"
@@ -56,7 +56,7 @@ Description: "KR Core의 활력징후 및 신체 계측 정보에 적용되는 O
 * component.code.coding ^slicing.discriminator.path = "$this"
 * component.code.coding ^slicing.rules = #open
 * component.code.coding contains Loinc 0..*
-* component.code.coding[Loinc] from LOINCCodes (required)
+* component.code.coding[Loinc] from KR_Core_LOINC_Codes (required)
 * component.code.coding[Loinc] ^short = "Loinc 코드 정보"
 * component.code.coding[Loinc] ^binding.extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-minValueSet"
 * component.code.coding[Loinc] ^binding.extension.valueCanonical = "http://www.hl7korea.or.kr/fhir/krcore/ValueSet/krcore-vital-signs-codes"
