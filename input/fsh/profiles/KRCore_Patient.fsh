@@ -3,6 +3,7 @@ Parent: Patient
 Id: krcore-patient
 Title: "KR Core Patient Profile"
 Description: "KR Core의 환자 정보에 적용되는 Patient 구조."
+* ^status = #active
 * ^version = "1.0.2"
 * ^date = "2023-12-04T10:04:56+09:00"
 * ^publisher = "HL7 Korea"

@@ -3,7 +3,7 @@ Id: krcore-edi-medication-codes
 Title: "KR Core EDI Medication Codes"
 Description: "KR Core EDI 약제 코드집합"
 * ^version = "1.0.2"
-* ^status = #draft
+* ^status = #active
 * ^experimental = false
 * ^date = "2021-11-27T23:35:13+09:00"
 * ^publisher = "HL7 Korea"

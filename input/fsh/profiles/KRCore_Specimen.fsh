@@ -4,7 +4,7 @@ Id: krcore-specimen
 Title: "KR Core Specimen Profile"
 Description: "KR Core의 검체종류."
 * ^version = "0.0.1"
-* ^status = #draft
+* ^status = #active
 * ^date = "2024-12-04T10:04:56+09:00"
 * ^publisher = "Jaehoon Lee"
 * ^contact[0].name = "Jaehoon Lee"
@@ -21,3 +21,5 @@ Description: "KR Core의 검체종류."
 * type.coding[SNOMED].system ^short = "SNOMED-CT"
 * type.coding[SNOMED].code 1.. MS
 * type.coding[SNOMED].code ^short = "SNOMEDCT 검체종류 코드"
+* subject 1..1 
+* subject only Reference(KRCore_Patient)

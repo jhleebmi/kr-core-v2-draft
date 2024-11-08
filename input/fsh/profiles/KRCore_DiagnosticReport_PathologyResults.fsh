@@ -50,7 +50,7 @@ Description: "KR Core의 병리검사 정보에 적용되는 DiagnosticReport �
 * code.coding[SNOMEDCT] ^short = "SNOMEDCT 코드 정보"
 * code.coding[SNOMEDCT] from KR_Core_SNOMED_Codes (required)
 * code.coding[SNOMEDCT].system 1.. MS
-* code.coding[SNOMEDCT].system = "http://snomed.org" (exactly)
+* code.coding[SNOMEDCT].system = "http://snomed.info/sct" (exactly)
 * code.coding[SNOMEDCT].code 1.. MS
 * code.coding[SNOMEDCT].code ^short = "SNOMEDCT 코드"
 * subject only Reference(KRCore_Patient)

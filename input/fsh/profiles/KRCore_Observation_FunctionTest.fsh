@@ -4,6 +4,7 @@ Id: krcore-observation-function-test
 Title: "KR Core Observation Profile for Function Test"
 Description: "KR Core의 기능검사 측정 정보에 적용되는 Observation 구조. 기능검사는 진단검사, 영상검사, 병리검사를 제외한 검사를 의미함. (예: 과내검사)"
 * ^version = "1.0.2"
+* ^status = #active
 * ^date = "2023-12-04T10:04:56+09:00"
 * ^publisher = "HL7 Korea"
 * ^contact[0].name = "HL7 Korea"

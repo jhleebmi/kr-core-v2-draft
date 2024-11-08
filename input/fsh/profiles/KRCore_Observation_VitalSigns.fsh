@@ -3,6 +3,7 @@ Parent: Observation
 Id: krcore-vitalsigns
 Title: "KR Core Observation Profile for Vital Signs"
 Description: "KR Core의 활력징후 및 신체 계측 정보에 적용되는 Observation 구조."
+* ^status = #active
 * ^version = "1.0.2"
 * ^date = "2023-12-04T10:04:56+09:00"
 * ^publisher = "HL7 Korea"

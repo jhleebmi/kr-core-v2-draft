@@ -3,6 +3,7 @@ Parent: KRCore_Observation_VitalSigns
 Id: krcore-heartrate
 Title: "KR Core Observation Profile for Vital Signs: Heart Rate"
 Description: "KR Core의 활력징후 및 신체 계측 중, 맥박수 측정 정보에 적용되는 Observation 구조."
+* ^status = #active
 * ^date = "2023-12-04T10:04:56+09:00"
 * ^publisher = "HL7 Korea"
 * ^contact[0].name = "HL7 Korea"

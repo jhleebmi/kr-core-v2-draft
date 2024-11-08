@@ -4,6 +4,7 @@ Id: krcore-observation-laboratory-result
 Title: "KR Core Observation Profile for Laboratory Result"
 Description: "KR Core의 진단검사 측정 정보에 적용되는 Observation 구조."
 * ^version = "1.0.2"
+* ^status = #active
 * ^date = "2023-12-04T10:04:56+09:00"
 * ^publisher = "HL7 Korea"
 * ^contact[0].name = "HL7 Korea"
@@ -43,7 +44,6 @@ Description: "KR Core의 진단검사 측정 정보에 적용되는 Observation 
 * code.coding contains LOINC 0..* MS
 * code.coding[LOINC] from KR_Core_LOINC_Codes (required)
 * code.coding[LOINC] ^short = "LOINC 코드 정보"
-* code.coding[LOINC] from $loinc (required)
 * code.coding[LOINC].system 1.. MS
 * code.coding[LOINC].system = "http://loinc.org" (exactly)
 * code.coding[LOINC].code 1.. MS
@@ -78,3 +78,4 @@ Description: "KR Core의 진단검사 측정 정보에 적용되는 Observation 
 * component.value[x] ^short = "세부 진단검사 측정 결과"
 * component.referenceRange MS
 * component.referenceRange ^short = "세부 진단검사 측정 결과 참고구간"
+* specimen only Reference (KRCore_Specimen)
